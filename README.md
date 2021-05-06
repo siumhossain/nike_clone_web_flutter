@@ -1,6 +1,6 @@
 # nike_clone_web
 
-A new Flutter project.
+still processing  
 
 ## Getting Started
 
