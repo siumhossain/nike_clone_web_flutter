@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nike_clone_web/widget/app_bar.dart';
+import 'package:nike_clone_web/widget/model.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -14,67 +15,38 @@ class _HomePageState extends State<HomePage> {
         body: ListView(
       children: <Widget>[
         Bar(),
+        ImageModel(
+          image: 'images/3.jpg',
+          height: 600.0,
+          pos1t: 380,
+          pos1l: 40,
+          pos2t: 490,
+          pos2l: 40,
+          pos3t: 520,
+          pos3l: 40,
+          text_highlited: 'Skip the \nSlippers',
+          small_cap: 'Last thing mama want\'s to wear',
+          button_name: 'Shop',
+        ),
         Padding(
-          padding: const EdgeInsets.only(top: 20.0, left: 60.0, right: 60.0),
-          child: Container(
-            width: double.infinity,
-            height: 600.0,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('images/1.jpg'), fit: BoxFit.cover),
-            ),
-            child: Stack(
-              children: <Widget>[
-                Positioned(
-                  top: 380,
-                  left: 40,
-                  child: Text(
-                    'Skip the \nSlippers'.toUpperCase(),
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Anton',
-                      fontSize: 50,
-                      height: 1.0,
-                    ),
-                  ),
-                ),
-                Positioned(
-                  top: 485,
-                  left: 40,
-                  child: Text(
-                    'Last thing mama want\'s to wear',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                Positioned(
-                  top: 520,
-                  left: 40,
-                  child: SizedBox(
-                    height: 40,
-                    width: 90,
-                    child: ElevatedButton(
-                      child: Text(
-                        "Shop",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      onPressed: () => print("it's pressed"),
-                      style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
-                        onPrimary: Colors.black,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(25.0),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
+          padding: const EdgeInsets.only(left: 60, top: 40),
+          child: Text(
+            'New Releases',
+            style: TextStyle(color: Colors.black, fontSize: 30.0),
           ),
+        ),
+        ImageModel(
+          image: 'images/2.jpg',
+          height: 600.0,
+          pos1t: 350,
+          pos1l: 40,
+          pos2t: 510,
+          pos2l: 40,
+          pos3l: 40,
+          pos3t: 550,
+          text_highlited: 'introducting \nthe air max \ngenome',
+          small_cap: 'A completely versatile take on modern style',
+          button_name: 'Shop',
         ),
       ],
     ));
