@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nike_clone_web/widget/app_bar.dart';
 import 'package:nike_clone_web/widget/model.dart';
+import 'package:nike_clone_web/widget/carousel.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -28,6 +29,9 @@ class _HomePageState extends State<HomePage> {
           small_cap: 'Last thing mama want\'s to wear',
           button_name: 'Shop',
         ),
+        SizedBox(
+          height: 20.0,
+        ),
         Padding(
           padding: const EdgeInsets.only(left: 60, top: 40),
           child: Text(
@@ -47,6 +51,55 @@ class _HomePageState extends State<HomePage> {
           text_highlited: 'introducting \nthe air max \ngenome',
           small_cap: 'A completely versatile take on modern style',
           button_name: 'Shop',
+        ),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: <Widget>[
+              Carousel(
+                image: 'images/shoe1.jpg',
+                headline: 'Nike Air Max Genome',
+                price: '\$170',
+                subtitle: 'Men\'s shoe',
+              ),
+              Carousel(
+                image: 'images/shoe2.jpg',
+                headline: 'Nike Air Max Genome',
+                price: '\$170',
+                subtitle: 'Men\'s shoe',
+              ),
+              Carousel(
+                image: 'images/shoe3.jpg',
+                headline: 'Nike Air Max Genome',
+                price: '\$170',
+                subtitle: 'Men\'s shoe',
+              ),
+              Carousel(
+                image: 'images/shoe4.jpg',
+                headline: 'Nike Air Max Genome',
+                price: '\$170',
+                subtitle: 'Men\'s shoe',
+              ),
+              Carousel(
+                image: 'images/shoe5.jpg',
+                headline: 'Nike Air Max Genome',
+                price: '\$170',
+                subtitle: 'Men\'s shoe',
+              ),
+              Carousel(
+                image: 'images/shoe6.jpg',
+                headline: 'Nike Air Max Genome',
+                price: '\$170',
+                subtitle: 'Men\'s shoe',
+              ),
+              Carousel(
+                image: 'images/shoe7.jpg',
+                headline: 'Nike Air Max Genome',
+                price: '\$170',
+                subtitle: 'Men\'s shoe',
+              ),
+            ],
+          ),
         ),
       ],
     ));
