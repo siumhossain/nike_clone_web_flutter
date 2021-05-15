@@ -1,21 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:nike_clone_web/widget/button.dart';
 
 class ImageModel extends StatelessWidget {
   const ImageModel({
     required this.image,
     required this.height,
+    this.width = 0.0,
     required this.text_highlited,
-    required this.small_cap,
+    this.small_cap = '',
     required this.button_name,
     required this.pos1t,
     required this.pos1l,
-    required this.pos2t,
-    required this.pos2l,
+    this.pos2t = 0.0,
+    this.pos2l = 0.0,
     required this.pos3t,
     required this.pos3l,
   });
   final String image;
   final double height;
+  final double width;
+
   final String text_highlited;
   final String small_cap;
   final String button_name;
@@ -30,7 +34,7 @@ class ImageModel extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 20.0, left: 60.0, right: 60.0),
       child: Container(
-        width: double.infinity,
+        width: width,
         height: height,
         decoration: BoxDecoration(
           image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
@@ -66,22 +70,7 @@ class ImageModel extends StatelessWidget {
               child: SizedBox(
                 height: 40,
                 width: 90,
-                child: ElevatedButton(
-                  child: Text(
-                    button_name,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  onPressed: () => print("it's pressed"),
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    onPrimary: Colors.black,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(25.0),
-                    ),
-                  ),
-                ),
+                child: Button(button_name: button_name),
               ),
             ),
           ],

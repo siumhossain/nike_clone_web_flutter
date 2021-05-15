@@ -12,3 +12,8 @@ const searchbar_decoration = InputDecoration(
     color: Colors.grey,
   ),
 );
+const fotter_text = TextStyle(
+  color: Colors.white,
+  fontWeight: FontWeight.bold,
+  fontSize: 12,
+);

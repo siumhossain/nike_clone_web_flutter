@@ -4,8 +4,8 @@ class Carousel extends StatelessWidget {
   const Carousel(
       {required this.image,
       required this.headline,
-      required this.price,
-      required this.subtitle});
+      this.price = '',
+      this.subtitle = ''});
   final String image;
   final String headline;
   final String price;
