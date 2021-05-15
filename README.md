@@ -1,6 +1,11 @@
 # nike_clone_web
 
-still processing  
+Not responsive  (i'm working on it) 
+
+![nike-clone-1](1.jpg)
+![nike-clone-1](2.png)
+![nike-clone-1](3.png)
+![nike-clone-1](4.png)
 
 ## Getting Started
 
