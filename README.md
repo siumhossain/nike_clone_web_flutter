@@ -2,10 +2,10 @@
 
 Not responsive  (i'm working on it) 
 
-![nike-clone-1](1.jpg)
-![nike-clone-1](2.png)
-![nike-clone-1](3.png)
-![nike-clone-1](4.png)
+![nike-clone-1](s1.png)
+![nike-clone-2](s2.png)
+![nike-clone-3](s3.png)
+![nike-clone-4](s4.png)
 
 ## Getting Started
 
